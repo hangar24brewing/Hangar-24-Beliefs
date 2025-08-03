@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangar 24 • Core Beliefs</title>
+  <!-- Google Fonts for a clean, approachable look -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Site styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Script for password protection and interactivity -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Password prompt overlay; hidden after successful login -->
+  <div id="passwordPrompt" class="password-overlay">
+    <div class="password-container">
+      <h2>Welcome</h2>
+      <p>Please enter the password to access the Hangar 24 Core Beliefs site.</p>
+      <input id="passwordInput" type="password" placeholder="Password" />
+      <button id="passwordSubmit">Enter</button>
+      <p id="passwordError" class="error"></p>
+    </div>
+  </div>
+
+  <!-- Header with hero image and tagline -->
+  <header>
+    <div class="header-overlay">
+      <h1>Hangar 24 Core Beliefs</h1>
+      <p class="tagline">Crafting character, craftsmanship &amp; community</p>
+    </div>
+  </header>
+
+  <!-- Main navigation -->
+  <nav>
+    <ul>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#heart">Heart</a></li>
+      <li><a href="#pillars">Pillars</a></li>
+      <li><a href="#pillar1">Values</a></li>
+      <li><a href="#pillar2">Craftsmanship</a></li>
+      <li><a href="#pillar3">Community</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Mission -->
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <p>
+        To gather people around the table through the ancient gifts of beer,
+        bread and celebration; creating space where hearts encounter the
+        abundant life that transforms everything.
+      </p>
+    </section>
+
+    <!-- Heart -->
+    <section id="heart">
+      <h2>The Heart of Who We Are</h2>
+      <p>
+        At Hangar 24, a great business isn’t just about what we make—it’s about
+        who we are, how we work and how we build each other up. Our core
+        beliefs aren’t abstract ideals hanging on a wall; they are living
+        principles that flow through every batch we brew, every plate we
+        serve and every conversation we share. They shape our decisions
+        when no one is watching and remind us who we truly are in the moments
+        that define us.
+      </p>
+    </section>
+
+    <!-- Pillars Overview -->
+    <section id="pillars" class="pillars-overview">
+      <h2>The Three Pillars</h2>
+      <p>
+        Like the brewing process—where grain, time and community transform
+        simple ingredients into something that nourishes both body and spirit—our
+        core beliefs work in sacred synergy:
+      </p>
+      <div class="pillars-grid">
+        <div class="pillar-preview">
+          <h3>Character</h3>
+          <p>Time‑Honored American Values form the foundation of who we are.</p>
+        </div>
+        <div class="pillar-preview">
+          <h3>Craft</h3>
+          <p>Masterful Craftsmanship builds upon character to create
+            lasting excellence.</p>
+        </div>
+        <div class="pillar-preview">
+          <h3>Community</h3>
+          <p>Transformational Community completes the transformation,
+            elevating us together.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pillar 1: Time‑Honored American Values -->
+    <section id="pillar1">
+      <h2>Time‑Honored American Values</h2>
+      <p class="intro">
+        Strong individuals build strong communities. Hangar 24 draws on a
+        heritage of character that crossed oceans with pilgrims, cleared
+        wilderness with pioneers and built a nation from an impossible dream.
+        These seven foundational values create the bedrock upon which
+        everything else is built.
+      </p>
+      <!-- Foundation stones accordion -->
+      <div class="accordion">
+        <details>
+          <summary><span>Truthful</span><small>Reality doesn’t negotiate—it simply is.</small></summary>
+          <p>
+            Living truthfully means having the courage to pursue what’s real,
+            speak what’s accurate and welcome what’s hard—because you genuinely
+            care. We choose truth even when it costs convenience, trusting
+            that transparency builds the only foundation strong enough to
+            bear real weight.
+          </p>
+          <ul>
+            <li>Report issues immediately rather than hiding them.</li>
+            <li>Admit when you don’t know something; seek accurate information.</li>
+            <li>Be transparent about product limitations and timing.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Loving</span><small>Love sees what is and chooses what could be.</small></summary>
+          <p>
+            Love is commitment to another’s good even when there’s nothing
+            in it for you. It doesn’t wait for worthiness; it creates it.
+            When convenience conflicts with care, love chooses care. When
+            personal gain conflicts with another’s good, love chooses good.
+          </p>
+          <ul>
+            <li>Invest personal time mentoring and supporting colleagues.</li>
+            <li>Advocate for customers and guests, even at your own cost.</li>
+            <li>Accommodate unique needs as opportunities to serve.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Servant‑Hearted</span><small>Strength finds its highest expression in service.</small></summary>
+          <p>
+            True power reveals itself through restraint. Those who can lead
+            choose to lift; those who could demand decide to give. Service is
+            not subservience—it’s strength directed toward elevating others.
+          </p>
+          <ul>
+            <li>Leaders handle tedious tasks alongside their teams.</li>
+            <li>Take difficult assignments to protect less experienced staff.</li>
+            <li>Share opportunities generously so everyone grows.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Good</span><small>Goodness sees need and simply responds.</small></summary>
+          <p>
+            Goodness is the natural tendency to see what helps, heals and
+            builds up—and then act on it. It doesn’t calculate kindness or
+            keep score; it intervenes when something is broken and refuses
+            to participate in harm.
+          </p>
+          <ul>
+            <li>Step in when someone is struggling or equipment is stressed.</li>
+            <li>Protect colleagues from unreasonable demands or customers.</li>
+            <li>Offer honest advice even when it may reduce immediate sales.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Faithful Stewards</span><small>Faithfulness is the compound interest of character.</small></summary>
+          <p>
+            Small promises kept create large trust. We honor what we’ve been
+            entrusted with—our bodies, minds, relationships and work—through
+            thousands of small decisions that build reliability. Faithfulness
+            turns words into bonds when tested by time and circumstance.
+          </p>
+          <ul>
+            <li>Maintain standards even when under pressure or unobserved.</li>
+            <li>Follow up on promises consistently and thoroughly.</li>
+            <li>Care for resources with the same attention in every situation.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Humble</span><small>Humility builds bridges where pride builds walls.</small></summary>
+          <p>
+            Humility isn’t thinking less of yourself; it’s thinking of
+            yourself less. It’s the wisdom to know what you don’t know and
+            the strength to admit it. Humility keeps us teachable, opens
+            doors to deeper understanding and allows us to learn from anyone.
+          </p>
+          <ul>
+            <li>Ask questions of newcomers and value fresh perspectives.</li>
+            <li>Publicly acknowledge mistakes and adjust based on feedback.</li>
+            <li>Give credit to others and celebrate team contributions.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Joyful</span><small>Joy is contagious rebellion against despair.</small></summary>
+          <p>
+            Joy isn’t the absence of difficulty but the presence of
+            perspective. It finds meaning in carrying the weight and shares
+            hope when situations feel heavy. Celebration and laughter become
+            acts of defiance against cynicism.
+          </p>
+          <ul>
+            <li>Find satisfaction in the daily rhythms of transformation.</li>
+            <li>Bring warmth to interactions even during hard shifts.</li>
+            <li>Approach challenges with optimism and belief in solutions.</li>
+          </ul>
+        </details>
+      </div>
+      <div class="why-it-matters">
+        <h3>Why It Matters</h3>
+        <p>
+          These seven qualities weave together like strands in a rope—truth
+          without love becomes harsh, love without goodness becomes enabling,
+          and goodness without humility becomes self‑righteousness. Character
+          holds when everything else gives way. We hire for it, nurture it and
+          let it become the bedrock on which we build our craft and community.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pillar 2: Masterful Craftsmanship -->
+    <section id="pillar2">
+      <h2>Masterful Craftsmanship</h2>
+      <p class="intro">
+        Throughout history, the greatest craftsmen have understood that their
+        work connects them to forces larger than themselves. Excellence
+        emerges when skill becomes stewardship and craft becomes calling.
+        These seven principles reveal why some work transcends function to
+        become art and why craftsmanship is more than making things well—it’s
+        creating things that matter.
+      </p>
+      <div class="accordion">
+        <details>
+          <summary><span>Partnership with Purpose</span><small>We are designed to create, built to build.</small></summary>
+          <p>
+            The finest craftsmen recognize that their abilities are gifts and
+            that creativity flows from sources beyond personal effort. This
+            understanding transforms arrogance into gratitude and performance
+            into stewardship.
+          </p>
+          <ul>
+            <li>Approach processes with reverence for traditions and natural laws.</li>
+            <li>See talent as a resource to be cultivated, not owned.</li>
+            <li>Remain grateful for the opportunity to participate in meaningful work.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Reverence for Detail</span><small>Excellence lives in the margins others overlook.</small></summary>
+          <p>
+            Invisible foundations determine visible beauty. True craftsmen
+            invest care in details that matter precisely because others
+            might ignore them. They measure twice, check constantly and
+            refuse shortcuts that compromise quality for convenience.
+          </p>
+          <ul>
+            <li>Follow protocols faithfully when unobserved.</li>
+            <li>Maintain equipment beyond immediate necessity.</li>
+            <li>Obsess over the small things that elevate the whole.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Sacred Stewardship</span><small>Everything entrusted to us demands faithful care.</small></summary>
+          <p>
+            Resources, time, opportunities and relationships are temporary
+            trusts. Treat them with conscious care—barley represents
+            months of labor, a guest’s evening is irreplaceable and a
+            teammate’s growth cannot be regained once lost.
+          </p>
+          <ul>
+            <li>Use ingredients and materials with awareness of their true cost.</li>
+            <li>Manage time as the non‑renewable resource it is.</li>
+            <li>Treat tools and relationships as responsibilities, not commodities.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Work as Expression</span><small>What we make reveals who we are.</small></summary>
+          <p>
+            Work isn’t separate from identity; it expresses it. Every brew,
+            dish or service interaction reflects the character of its creator.
+            Quality becomes a personal signature, while mediocrity becomes
+            self‑betrayal.
+          </p>
+          <ul>
+            <li>Let consistency reflect personal reliability.</li>
+            <li>Treat each interaction as an opportunity to convey values.</li>
+            <li>Present work in a way that honours those who receive it.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Humble Learning</span><small>Mastery begins when we admit what we don’t know.</small></summary>
+          <p>
+            Pride builds walls around current knowledge; humility opens doors
+            to deeper understanding. True masters remain teachable and seek
+            instruction from mentors, mistakes and even those they teach.
+          </p>
+          <ul>
+            <li>Study new techniques regardless of seniority.</li>
+            <li>Learn from newcomers who see what familiarity misses.</li>
+            <li>Ask questions that reveal gaps rather than hiding them.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Patient Process</span><small>Excellence cannot be rushed; it can only be reached.</small></summary>
+          <p>
+            Time and process aren’t negotiable. Fermentation, development and
+            mastery follow natural rhythms. Excellence emerges from
+            respecting those rhythms and resisting the temptation to hurry
+            what requires patience.
+          </p>
+          <ul>
+            <li>Honour production schedules regardless of pressure.</li>
+            <li>Allow team members time to develop competence.</li>
+            <li>Build reputation through consistency over years rather than shortcuts.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Purposeful Service</span><small>The highest skill serves the deepest need.</small></summary>
+          <p>
+            Ultimate mastery reveals itself not in personal glory but in
+            others’ flourishing. Skill without service becomes display;
+            service without skill becomes well‑intentioned mediocrity. True
+            excellence creates value that extends beyond yourself.
+          </p>
+          <ul>
+            <li>Develop systems that enable team success rather than showcasing yourself.</li>
+            <li>Mentor others so greatness multiplies through generosity.</li>
+            <li>Create work that strengthens community while expressing personal excellence.</li>
+          </ul>
+        </details>
+      </div>
+      <div class="why-it-matters">
+        <h3>Why It Matters</h3>
+        <p>
+          When these principles guide our craft, every decision carries deeper
+          meaning and every perfectly prepared product becomes an expression of
+          values that outlast a single meal or pour. Craftsmanship built on
+          purpose doesn’t just create better beer, food and service—it creates
+          better people, stronger community and work that matters.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pillar 3: Transformational Community -->
+    <section id="pillar3">
+      <h2>Transformational Community</h2>
+      <p class="intro">
+        Even the finest ingredients require the right environment to reach
+        their potential. At Hangar 24 we believe that true transformation
+        happens in relationship. Our community isn’t just a group of people
+        in the same place; it’s a culture built on encouragement,
+        accountability and shared experiences. These five principles show
+        how individual strength serves collective flourishing and how
+        ordinary people become remarkable together.
+      </p>
+      <div class="accordion">
+        <details>
+          <summary><span>Foundation Principles</span><small>Character &amp; individuality</small></summary>
+          <p>
+            Transformational community begins with individuals of character
+            who create space for others to flourish. Love sees worth beyond
+            usefulness; honor recognizes inherent value regardless of position;
+            acceptance embraces difference within shared values; kindness
+            chooses consideration over convenience.
+          </p>
+          <ul>
+            <li><strong>Love One Another:</strong> See each person’s value and seek their good.</li>
+            <li><strong>Honor One Another:</strong> Treat every role with genuine respect.</li>
+            <li><strong>Accept One Another:</strong> Embrace diverse perspectives within a shared mission.</li>
+            <li><strong>Be Kind to One Another:</strong> Choose thoughtful action over indifference.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Communication Principles</span><small>How we speak</small></summary>
+          <p>
+            Words create worlds. We commit to speech that builds trust and
+            refuses to erode it. Truth honors others with reality rather
+            than comfortable illusion. Encouragement highlights potential
+            amid struggle. Instruction shares knowledge freely. Warnings
+            speak up when danger looms. Honor in absence refuses gossip
+            and invites direct conversation.
+          </p>
+          <ul>
+            <li><strong>Speak Truth:</strong> Offer reality with courage and honesty.</li>
+            <li><strong>Encourage:</strong> Highlight strengths and fuel determination.</li>
+            <li><strong>Instruct:</strong> Share knowledge freely; teaching multiplies mastery.</li>
+            <li><strong>Warn:</strong> Offer timely cautions when danger approaches.</li>
+            <li><strong>Speak Honorably:</strong> Avoid gossip; protect reputations in absence.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Growth Principles</span><small>Development &amp; excellence</small></summary>
+          <p>
+            Progress requires both affirmation and correction. We admonish
+            with respect, striving for excellence together. We seek wisdom
+            collectively, turning complaint into contribution. We hold one
+            another accountable with clear expectations and appropriate
+            consequences. And we remain patient, recognizing that growth
+            follows natural progression.
+          </p>
+          <ul>
+            <li><strong>Admonish:</strong> Confront patterns that limit potential with care.</li>
+            <li><strong>Strive for Excellence:</strong> Challenge each other toward mastery.</li>
+            <li><strong>Seek Wisdom Together:</strong> Pursue deeper understanding collectively.</li>
+            <li><strong>Hold Accountable:</strong> Establish expectations and address destructive behaviours.</li>
+            <li><strong>Be Patient:</strong> Allow development to unfold without undue pressure.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Reconciliation Principles</span><small>Healing &amp; harmony</small></summary>
+          <p>
+            Conflict is inevitable; division is a choice. These principles
+            provide pathways back to unity. We bear with one another’s
+            unfinished edges, forgive past wrongs, pursue peace by going
+            directly to the source, and work in harmony by coordinating
+            diverse strengths toward common goals.
+          </p>
+          <ul>
+            <li><strong>Bear With One Another:</strong> Carry tolerance for quirks and weaknesses.</li>
+            <li><strong>Forgive One Another:</strong> Release past wrongs to free both parties.</li>
+            <li><strong>Pursue Peace:</strong> Address conflicts directly and seek unity.</li>
+            <li><strong>Work in Harmony:</strong> Orchestrate differences into shared achievement.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Support Principles</span><small>Carrying &amp; celebrating</small></summary>
+          <p>
+            True belonging emerges in how we handle vulnerability, need and
+            success. The strongest among us lift others’ burdens, submit to
+            expertise beyond our own, share loads when someone is overwhelmed
+            and stand with each other in hardship. We celebrate achievements
+            deliberately and create welcome that forges lasting belonging.
+          </p>
+          <ul>
+            <li><strong>Serve One Another:</strong> Lift others’ burdens without fanfare.</li>
+            <li><strong>Submit to One Another:</strong> Recognize when others’ expertise should lead.</li>
+            <li><strong>Carry Burdens:</strong> Share weight when someone’s load exceeds capacity.</li>
+            <li><strong>Stand With One Another:</strong> Offer presence without rushing to fix.</li>
+            <li><strong>Celebrate With One Another:</strong> Mark achievements to reinforce values.</li>
+            <li><strong>Create Welcome:</strong> Foster environments where everyone belongs.</li>
+          </ul>
+        </details>
+      </div>
+      <div class="why-it-matters">
+        <h3>Why It Matters</h3>
+        <p>
+          We are meant to live, work and grow together. A culture of strong,
+          committed individuals combined with a relentless pursuit of excellence
+          creates an unshakable community. When these principles govern our
+          interactions, ordinary people become remarkable and collective
+          transformation unfolds.
+        </p>
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion">
+      <h2>The Complete Brew</h2>
+      <p>
+        Character forms the foundation → Craft builds upon it → Community
+        completes the transformation. Together they create something
+        extraordinary: a brewery where the ancient gifts of beer, bread and
+        celebration bring people together around a table and the abundant
+        life transforms everything. We invite you to embody these beliefs in
+        every task, interaction and decision.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hangar 24 • All rights reserved.</p>
+  </footer>
+</body>
+</html>

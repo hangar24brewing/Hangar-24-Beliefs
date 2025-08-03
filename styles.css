@@ -1,0 +1,310 @@
+/*
+  Hangar 24 Core Beliefs Website Styles
+
+  The color palette takes inspiration from the Hangar 24 logo: deep browns
+  and golds paired with warm neutrals. The fonts chosen (Montserrat and
+  Open Sans) create a modern yet approachable tone. Responsive layouts
+  ensure the content remains digestible on any device.
+*/
+
+:root {
+  --primary: #d0aa5b; /* warm gold */
+  --secondary: #866616; /* deep amber */
+  --accent: #f4a00e; /* bright gold accent for highlights */
+  --dark: #352a2a; /* rich dark brown */
+  --light: #f5f3ef; /* soft off‑white background */
+  --panel-bg: #ffffff; /* white for cards */
+  --panel-border: #dcd4c5; /* subtle border for panels */
+  --text-dark: #352a2a;
+  --text-muted: #655c55;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--light);
+  line-height: 1.6;
+}
+
+header {
+  position: relative;
+  /* Use a warm gradient rather than an external image for the hero.
+     The gradient evokes wheat fields and amber liquid without
+     introducing copyrighted imagery or text. */
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 50%, var(--light) 100%);
+  color: var(--light);
+  text-align: center;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dark overlay to improve text contrast on hero image */
+.header-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+header .tagline {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+nav {
+  background-color: var(--dark);
+  color: var(--light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+nav li {
+  margin: 0.5rem 1rem;
+}
+
+nav a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+section {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-top: 0;
+  color: var(--secondary);
+  border-left: 6px solid var(--primary);
+  padding-left: 0.5rem;
+}
+
+section h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: var(--secondary);
+}
+
+.intro {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.pillars-overview .pillars-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pillars-overview .pillar-preview {
+  flex: 1 1 250px;
+  background-color: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.pillars-overview .pillar-preview h3 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.accordion details {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.accordion details[open] {
+  background-color: #fcf8f2;
+}
+
+.accordion summary {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style: none;
+  margin: 0;
+}
+
+.accordion summary span {
+  font-weight: 600;
+  color: var(--secondary);
+  font-size: 1.1rem;
+}
+
+.accordion summary small {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+
+details p, details ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+details ul {
+  padding-left: 1.5rem;
+}
+
+details ul li {
+  margin-bottom: 0.5rem;
+}
+
+.why-it-matters {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.why-it-matters h3 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+
+.why-it-matters p {
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Password overlay styles */
+.password-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.password-container {
+  background-color: var(--panel-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.password-container h2 {
+  margin-top: 0;
+  color: var(--secondary);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.password-container input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--panel-border);
+  border-radius: 4px;
+}
+
+.password-container button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--primary);
+  color: var(--dark);
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.password-container button:hover {
+  background-color: var(--accent);
+}
+
+.password-container .error {
+  color: #c0392b;
+  height: 1rem;
+  font-size: 0.85rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header {
+    height: 40vh;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .pillars-overview .pillars-grid {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.25rem 0;
+  }
+  section {
+    padding: 2rem 1rem;
+  }
+}
